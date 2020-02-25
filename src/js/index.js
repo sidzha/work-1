@@ -1,7 +1,7 @@
-const $div1 = $('.page-main-2__list'),
+const $div1 = $('.page-main-2__features'),
   $div2 = $('.page-main-2__price'),
   currentDiv = 'div1',
-  $button = $('button');
+  $button = $('.page-main-2__button');
 
 $div2.hide();
 
