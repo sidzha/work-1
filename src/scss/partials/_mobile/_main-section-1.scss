@@ -1,0 +1,36 @@
+.page-main-1 {
+  padding: 0 15px;
+  margin-bottom: -5px;
+}
+
+.page-main-1__header {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 40px;
+
+  & span {
+    font-size: 40px;
+    color: $bg-color-2;
+  }
+}
+
+.page-main-1__container {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  height: 700px;
+  padding: 660px 30px 0;
+  background: url('../img/bg/phone.png') no-repeat center;
+}
+
+.page-main-1__appstore {
+  height: 55px;
+  width: 140px;
+  background: url('../img/bg/appstore-badge.svg') no-repeat center;
+}
+
+.page-main-1__playmarket {
+  height: 60px;
+  width: 140px;
+  background: url('../img/bg/playmarket-badge.svg') no-repeat center;
+}
