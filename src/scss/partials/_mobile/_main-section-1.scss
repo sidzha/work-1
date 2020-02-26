@@ -1,7 +1,10 @@
 .page-main-1 {
   padding: 0 15px;
-  margin-bottom: -5px;
+  margin: 0 auto -5px;
   color: $text-dark;
+  max-width: 375px;
+  background: url("../img/bg/phone-2.png") no-repeat -100px 77px;
+  background-size: 125%;
 }
 
 .page-main-1__header {
@@ -15,23 +18,38 @@
   }
 }
 
+.page-main-1__button {
+  position: fixed;
+  bottom: 15px;
+  width: 345px;
+  height: 60px;
+  background: linear-gradient(90deg, #8e73ea 0%, #7a7af1 58.85%, #6983f5 100%);
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: $text-white;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .page-main-1__container {
   display: flex;
   justify-content: space-between;
   align-self: center;
   height: 700px;
   padding: 660px 30px 0;
-  background: url('../img/bg/phone.png') no-repeat center;
 }
 
 .page-main-1__appstore {
   height: 55px;
   width: 140px;
-  background: url('../img/bg/appstore-badge.svg') no-repeat center;
+  background: url("../img/bg/appstore-badge.svg") no-repeat center;
 }
 
 .page-main-1__playmarket {
   height: 60px;
   width: 140px;
-  background: url('../img/bg/playmarket-badge.svg') no-repeat center;
+  background: url("../img/bg/playmarket-badge.svg") no-repeat center;
 }

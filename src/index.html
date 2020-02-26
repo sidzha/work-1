@@ -16,13 +16,20 @@
 
     <main>
       <section class="page-main-1">
-        <h1 class="page-main-1__header">
-          Мобильное Приложение для вашего бизнеса за&nbsp;<span>28 000</span>
-          рублей в год
-        </h1>
-        <div class="page-main-1__container">
-          <a href="#" class="page-main-1__appstore" role="button"></a>
-          <a href="#" class="page-main-1__playmarket"></a>
+        <div class="page-main-1__container--2">
+          <h1 class="page-main-1__header">
+            Мобильное Приложение для вашего бизнеса за&nbsp;<span
+              >28&nbsp;000₽</span
+            >
+            в год
+          </h1>
+          <button class="page-main-1__button">
+            Хочу такое приложение
+          </button>
+          <div class="page-main-1__container">
+            <a href="#" class="page-main-1__appstore" role="button"></a>
+            <a href="#" class="page-main-1__playmarket"></a>
+          </div>
         </div>
       </section>
       <section class="page-main-2">
@@ -46,25 +53,47 @@
               </li>
             </ul>
           </div>
+
           <div class="page-main-2__price">
-            <h2 class="page-main-2__header">
-              Упростите работу своей организации всего за
-            </h2>
-            <div class="page-main-2__container-2">
-              <p class="page-main-2__price--bold">15 000</p>
-              <p class="page-main-2__price--regular">инстялляционный платеж</p>
-              <p class="page-main-2__price--bold">+</p>
-              <p class="page-main-2__price--bold">2 400</p>
-              <p class="page-main-2__price--regular">рублей в месяц</p>
+            <div class="price__comtainer">
+              <h2 class="page-main-2__header">
+                Упростите работу своей организации всего за
+              </h2>
+              <div class="page-main-2__container-2">
+                <div>
+                  <p class="page-main-2__price--bold">15 000</p>
+                  <p class="page-main-2__price--regular">
+                    инстялляционный платеж
+                  </p>
+                </div>
+                <p class="page-main-2__price--bold">+</p>
+                <div>
+                  <p class="page-main-2__price--bold">2 400</p>
+                  <p class="page-main-2__price--regular">рублей в месяц</p>
+                </div>
+              </div>
+              <p class="page-main-2__price--article">
+                При необходимости приложение может быть брендировано и полностью
+                изменено под задачи салона или барбер-шопа
+              </p>
             </div>
-            <p class="page-main-2__price--article">
-              При необходимости приложение может быть брендировано и полностью
-              изменено под задачи салона или барбер-шопа
-            </p>
           </div>
         </div>
 
-        <button class="page-main-2__button">yo!</button>
+        <div class="page-main-2__switch-wrapper">
+          <span
+            class="switch-wrapper__text switch-wrapper__text--before js-first"
+            >преимущества</span
+          >
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" class="theme-switch__input" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <span
+            class="switch-wrapper__text switch-wrapper__text--after js-second"
+            >стоимость</span
+          >
+        </div>
       </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

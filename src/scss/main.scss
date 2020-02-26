@@ -1,6 +1,13 @@
 @import "./partials/fonts";
 @import "./partials/colors";
 @import "./partials/presets";
+//mobile
 @import "./partials/_mobile/header";
 @import "./partials/_mobile/main-section-1";
 @import "./partials/_mobile/main-section-2";
+@import "./partials/_mobile/switcher";
+//tablet
+@import "./partials/_tablet/header";
+@import "./partials/_tablet/main-section-1";
+@import "./partials/_tablet/main-section-2";
+@import "./partials/_tablet/switcher";
