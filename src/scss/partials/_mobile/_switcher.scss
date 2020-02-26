@@ -30,17 +30,17 @@
 }
 
 .slider:before {
+  bottom: 2px;
+  left: 2px;
   background: linear-gradient(
     180deg,
     #e8eaec -19.05%,
     #ffffff 20.74%,
     #d1d3d4 91.67%
   );
-  bottom: 2px;
-  content: "";
+  content: '';
   width: 18px;
   height: 18px;
-  left: 2px;
   position: absolute;
   transition: 0.4s;
 }
