@@ -2,8 +2,12 @@
   .page-main-2 {
     position: relative;
     height: 1085px;
-    max-width: 1440px;
-    background: url('../img/bg/bg-7.png') no-repeat 220px 670px;
+    max-width: 2000px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: none;
     padding-top: 70px;
     z-index: 10;
   }
@@ -32,25 +36,21 @@
     }
 
     &:nth-child(2) {
-      background-image: url('../img/icons/feature-2-desk.svg');
       padding-right: 100px;
     }
 
     &:nth-child(3) {
       padding-right: 100px;
+      margin-bottom: 100px;
     }
 
     &:nth-child(4) {
-      background-image: url('../img/icons/feature-4-desk.svg');
-      background-size: 40%;
-      padding-left: 140px;
-      margin: 45px 0 15px 315px;
+      padding-left: 100px;
+      margin: 45px 0 55px 315px;
     }
 
     &:nth-child(5) {
-      background-image: url('../img/icons/feature-5-desk.svg');
-      background-size: 40%;
-      padding-left: 140px;
+      padding-left: 100px;
       margin-bottom: 0;
       margin-left: 315px;
     }

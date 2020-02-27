@@ -1,9 +1,16 @@
 @media only screen and (min-width: 768px) {
+  main {
+    &::after {
+      width: 2140px;
+      top: 570px;
+    }
+  }
+
   .page-main-1 {
     display: flex;
     max-width: 768px;
-    background: url("../img/bg/phone.png") no-repeat right 26px;
-    background-size: 51%;
+    background: url("../img/bg/phone.png") no-repeat right 70px;
+    background-size: 49.5%;
   }
 
   .page-main-1__header {

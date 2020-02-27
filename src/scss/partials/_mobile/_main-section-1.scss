@@ -1,10 +1,29 @@
+main {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2435px;
+    height: 1320px;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../img/bg/bg-5.png") no-repeat;
+    z-index: 5;
+  }
+}
+
 .page-main-1 {
+  position: relative;
   padding: 0 15px;
   margin: 0 auto -5px;
   color: $text-dark;
   max-width: 375px;
-  background: url("../img/bg/phone-2.png") no-repeat -100px 77px;
-  background-size: 125%;
+  background: url("../img/bg/phone.png") no-repeat center 130px;
+  background-size: 97%;
+  z-index: 8;
 }
 
 .page-main-1__header {
@@ -20,18 +39,39 @@
 
 .page-main-1__button {
   position: fixed;
-  bottom: 15px;
   width: 345px;
   height: 60px;
-  background: linear-gradient(90deg, #8e73ea 0%, #7a7af1 58.85%, #6983f5 100%);
   border: none;
   border-radius: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  color: $text-white;
-  z-index: 10;
   cursor: pointer;
+
+  & a {
+    color: $text-white;
+  }
+}
+
+.page-main-1__button--order {
+  bottom: 85px;
+  background: url("../img/bg/bg-6.svg") no-repeat right 0,
+    linear-gradient(90deg, #8e73ea 0%, #7a7af1 58.85%, #6983f5 100%);
+
+  & a {
+    color: $text-white;
+  }
+}
+
+.page-main-1__button--video {
+  bottom: 15px;
+  background: url("../img/bg/bg-8.svg") no-repeat 285px 10px,
+    rgba(255, 255, 255, 0.61);
+  backdrop-filter: blur(15px);
+
+  & a {
+    color: $bg-color-2;
+  }
 }
 
 .page-main-1__container {

@@ -38,7 +38,7 @@
     #ffffff 20.74%,
     #d1d3d4 91.67%
   );
-  content: '';
+  content: "";
   width: 18px;
   height: 18px;
   position: absolute;
@@ -52,6 +52,7 @@
   line-height: 20px;
   letter-spacing: -0.05em;
   transition: color 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .switch-wrapper__text--before {

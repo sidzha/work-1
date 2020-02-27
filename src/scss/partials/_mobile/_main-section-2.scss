@@ -1,11 +1,13 @@
 .page-main-2 {
-  height: 630px;
+  position: relative;
+  height: 730px;
   max-width: 375px;
-  background: url("../img/bg/bg-1.svg") no-repeat center -390px;
+  // background: url("../img/bg/bg-1.svg") no-repeat center -390px;
   padding-top: 55px;
   overflow: hidden;
   color: $text-dark;
   margin: 0 auto;
+  z-index: 7;
 }
 
 .page-main-2__container {

@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
+    <!-- Marquiz script start -->
+    <script
+      src="//script.marquiz.ru/v1.js"
+      type="application/javascript"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init({
+          id: "5e4fdd2312e3d30044fb0218",
+          autoOpen: false,
+          autoOpenFreq: "once",
+          openOnExit: false
+        });
+      });
+    </script>
+    <!-- Marquiz script end -->
   </head>
   <body>
     <header class="page-header">
@@ -100,7 +116,7 @@
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/webiraydesign/"
+            href="https://www.instagram.com/webiraylab/"
             class="contacts-item"
             target="_blank"
           >
@@ -206,8 +222,11 @@
             >
             в год
           </h2>
-          <button class="page-main-1__button">
-            Хочу такое приложение
+          <button class="page-main-1__button page-main-1__button--order">
+            <a href="#popup:marquiz_5e4fdd2312e3d30044fb0218">Заказать</a>
+          </button>
+          <button class="page-main-1__button page-main-1__button--video">
+            <a href="#popup:marquiz_5e4fdd2312e3d30044fb0218">Смотреть</a>
           </button>
           <div class="page-main-1__container">
             <a href="#" class="page-main-1__appstore" role="button"></a>
@@ -268,17 +287,19 @@
         </div>
 
         <div class="page-main-2__switch-wrapper">
-          <span
+          <label
+            for="checkbox"
             class="switch-wrapper__text switch-wrapper__text--before js-first"
-            >преимущества</span
+            >преимущества</label
           >
           <label class="theme-switch" for="checkbox">
             <input type="checkbox" class="theme-switch__input" id="checkbox" />
             <div class="slider round"></div>
           </label>
-          <span
+          <label
+            for="checkbox"
             class="switch-wrapper__text switch-wrapper__text--after js-second"
-            >стоимость</span
+            >стоимость</label
           >
         </div>
       </section>
