@@ -14,3 +14,26 @@ $($button).on("click", function() {
   $firstSpan.toggleClass("dark");
   $secondSpan.toggleClass("light");
 });
+
+$(document).on("click", function(e) {
+  if (
+    $(e.target).hasClass("btn-contacts") ||
+    $(e.target).hasClass("btn-contacts-img")
+  ) {
+    if ($(".contacts-container").hasClass("active")) {
+      closeAll();
+      return;
+    }
+    closeAll();
+    $(".contacts-container").addClass("active");
+    $(".contacts-item").addClass("active");
+    return;
+  }
+
+  closeAll();
+});
+
+function closeAll() {
+  $(".contacts-container").removeClass("active");
+  $(".contacts-item").removeClass("active");
+}

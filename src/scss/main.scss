@@ -1,18 +1,21 @@
-@import './partials/fonts';
-@import './partials/colors';
-@import './partials/presets';
+@import "./partials/fonts";
+@import "./partials/colors";
+@import "./partials/presets";
+//contacts
+@import "./partials/_tablet/header-contacts";
+@import "./partials//_mobile/header-contacts";
 //mobile
-@import './partials/_mobile/header';
-@import './partials/_mobile/main-section-1';
-@import './partials/_mobile/main-section-2';
-@import './partials/_mobile/switcher';
+@import "./partials/_mobile/header";
+@import "./partials/_mobile/main-section-1";
+@import "./partials/_mobile/main-section-2";
+@import "./partials/_mobile/switcher";
 //tablet
-@import './partials/_tablet/header';
-@import './partials/_tablet/main-section-1';
-@import './partials/_tablet/main-section-2';
-@import './partials/_tablet/switcher';
+@import "./partials/_tablet/header";
+@import "./partials/_tablet/main-section-1";
+@import "./partials/_tablet/main-section-2";
+@import "./partials/_tablet/switcher";
 //desktop
-@import './partials/_desktop/header';
-@import './partials/_desktop/main-section-1';
-@import './partials/_desktop/main-section-2';
-@import './partials/_desktop/switcher';
+@import "./partials/_desktop/header";
+@import "./partials/_desktop/main-section-1";
+@import "./partials/_desktop/main-section-2";
+@import "./partials/_desktop/switcher";

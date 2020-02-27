@@ -1,7 +1,7 @@
 .page-main-2 {
-  height: 615px;
+  height: 630px;
   max-width: 375px;
-  background: url('../img/bg/bg-1.svg') no-repeat center -390px;
+  background: url("../img/bg/bg-1.svg") no-repeat center -390px;
   padding-top: 55px;
   overflow: hidden;
   color: $text-dark;
@@ -41,23 +41,23 @@
   padding-left: 55px;
 
   &:nth-child(1) {
-    background-image: url('../img/icons/feature-1.svg');
+    background-image: url("../img/icons/feature-1.svg");
   }
 
   &:nth-child(2) {
-    background-image: url('../img/icons/feature-2.svg');
+    background-image: url("../img/icons/feature-2.svg");
   }
 
   &:nth-child(3) {
-    background-image: url('../img/icons/feature-3.svg');
+    background-image: url("../img/icons/feature-3.svg");
   }
 
   &:nth-child(4) {
-    background-image: url('../img/icons/feature-4.svg');
+    background-image: url("../img/icons/feature-4.svg");
   }
 
   &:nth-child(5) {
-    background-image: url('../img/icons/feature-5.svg');
+    background-image: url("../img/icons/feature-5.svg");
   }
 }
 
