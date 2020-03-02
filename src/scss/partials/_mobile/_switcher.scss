@@ -18,7 +18,6 @@
 
 .slider {
   position: absolute;
-
   background: linear-gradient(180deg, #14141c 20%, rgba(33, 33, 47, 0.63) 100%);
   box-shadow: 0px -4px 12px #adacff, 0px 4px 12px #484877;
   bottom: 0;
@@ -60,7 +59,7 @@
 }
 
 .switch-wrapper__text--after {
-  color: $text-alt;
+  color: $text-dark;
 }
 
 input:checked + .slider {
@@ -85,5 +84,5 @@ input:checked + .slider:before {
 }
 
 .dark {
-  color: $text-alt;
+  color: $text-dark;
 }

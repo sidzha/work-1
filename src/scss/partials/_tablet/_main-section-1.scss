@@ -29,13 +29,26 @@
 
   .page-main-1__container {
     height: 443px;
-    padding-top: 238px;
+    padding-top: 145px;
     margin-left: 394px;
   }
 
+  .page-main-1__container--3 {
+    display: flex;
+    flex-direction: column;
+  }
   .page-main-1__button {
     width: 290px;
     position: static;
     margin-left: 67px;
+  }
+
+  .page-main-1__button--order {
+    margin-bottom: 25px;
+  }
+
+  .page-main-1__button--video {
+    position: relative;
+    background-position: 230px 21px;
   }
 }

@@ -43,18 +43,25 @@
 
   .page-main-1__container {
     height: 443px;
-    padding-top: 305px;
+    padding-top: 220px;
     margin-left: 885px;
   }
 
   .page-main-1__button {
-    position: relative;
     width: 520px;
     font-weight: 500;
     font-size: 30px;
     border-radius: 20px;
-    line-height: 45px;
     letter-spacing: 0.05em;
     margin-left: 235px;
+  }
+
+  .page-main-1__container--3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-main-1__button--video {
+    background-position: 460px 21px;
   }
 }

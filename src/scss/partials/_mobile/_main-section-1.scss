@@ -45,32 +45,52 @@ main {
   border-radius: 10px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 60px;
+  text-align: center;
   cursor: pointer;
-
-  & a {
-    color: $text-white;
-  }
 }
 
 .page-main-1__button--order {
   bottom: 85px;
-  background: url("../img/bg/bg-6.svg") no-repeat right 0,
-    linear-gradient(90deg, #8e73ea 0%, #7a7af1 58.85%, #6983f5 100%);
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #667eea,
+    #764ba2,
+    #6b8dd6,
+    #8e37d7
+  );
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  color: $text-white;
+  transition: background-position 0.6s ease-in-out;
 
-  & a {
-    color: $text-white;
+  &:hover {
+    background-position: 100% 0;
   }
 }
 
 .page-main-1__button--video {
   bottom: 15px;
-  background: url("../img/bg/bg-8.svg") no-repeat 285px 10px,
+  border: 1px solid $bg-color-2;
+  background: url("../img/bg/play.svg") no-repeat 285px center,
     rgba(255, 255, 255, 0.61);
   backdrop-filter: blur(15px);
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.25);
+  color: $bg-color-2;
 
-  & a {
-    color: $bg-color-2;
+  &::after {
+    position: absolute;
+    top: 12px;
+    right: 37px;
+    width: 34px;
+    height: 34px;
+    content: "";
+    background: url("../img/bg/play-circle.svg") no-repeat;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: rotate(360deg);
   }
 }
 
