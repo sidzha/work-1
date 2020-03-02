@@ -4,28 +4,75 @@ main {
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 2435px;
     height: 1320px;
-    top: 430px;
+    top: 810px;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../img/bg/bg-5.png") no-repeat;
+    background: url('../img/bg/bg-5.svg') no-repeat;
+    background-size: 60%;
+    margin-left: 100px;
     z-index: 5;
   }
 }
 
 .page-main-1 {
+  max-width: 375px;
   position: relative;
   padding: 0 15px;
   margin: 0 auto -5px;
   color: $text-dark;
-  max-width: 375px;
-  background: url("../img/bg/phone.png") no-repeat center 130px;
-  background-size: 97%;
   z-index: 8;
 }
 
+.page-main-1__slider {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -150px;
+}
+
+.page-main-1__img {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+
+  &:nth-child(1) {
+    animation-delay: 0s;
+  }
+  &:nth-child(2) {
+    animation-delay: 3s;
+  }
+  &:nth-child(3) {
+    animation-delay: 6s;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  44.44% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .page-main-1__header {
   text-transform: uppercase;
   font-size: 26px;
@@ -71,27 +118,10 @@ main {
 
 .page-main-1__button--video {
   bottom: 15px;
-  border: 1px solid $bg-color-2;
-  background: url("../img/bg/play.svg") no-repeat 285px center,
-    rgba(255, 255, 255, 0.61);
+  background: rgba(255, 255, 255, 0.61);
   backdrop-filter: blur(15px);
   box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.25);
-  color: $bg-color-2;
-
-  &::after {
-    position: absolute;
-    top: 12px;
-    right: 37px;
-    width: 34px;
-    height: 34px;
-    content: "";
-    background: url("../img/bg/play-circle.svg") no-repeat;
-    transition: transform 0.8s ease-in-out;
-  }
-
-  &:hover::after {
-    transform: rotate(360deg);
-  }
+  color: $text-alt-2;
 }
 
 .page-main-1__container {
@@ -103,13 +133,13 @@ main {
 }
 
 .page-main-1__appstore {
-  height: 55px;
+  height: 65px;
   width: 140px;
-  background: url("../img/bg/appstore-badge.svg") no-repeat center;
+  background: url('../img/bg/appstore-badge.svg') no-repeat center;
 }
 
 .page-main-1__playmarket {
-  height: 60px;
+  height: 62px;
   width: 140px;
-  background: url("../img/bg/playmarket-badge.svg") no-repeat center;
+  background: url('../img/bg/playmarket-badge.svg') no-repeat center;
 }

@@ -2,15 +2,15 @@
   main {
     &::after {
       width: 2140px;
-      top: 570px;
+      top: 960px;
+      margin-left: -80px;
+      background-size: 80%;
     }
   }
 
   .page-main-1 {
     display: flex;
     max-width: 768px;
-    background: url("../img/bg/phone.png") no-repeat right 70px;
-    background-size: 49.5%;
   }
 
   .page-main-1__header {
@@ -20,16 +20,25 @@
     text-align: right;
     margin-top: 215px;
     margin-left: -17px;
-    margin-bottom: 44px;
+    margin-bottom: 115px;
 
     & span {
       font-size: 50px;
     }
   }
 
+  .page-main-1__slider {
+    top: 100px;
+    margin-left: 40px;
+  }
+
+  .page-main-1__img {
+    width: 310px;
+  }
+
   .page-main-1__container {
-    height: 443px;
-    padding-top: 145px;
+    height: 365px;
+    padding-top: 170px;
     margin-left: 394px;
   }
 
@@ -40,15 +49,32 @@
   .page-main-1__button {
     width: 290px;
     position: static;
-    margin-left: 67px;
+    margin-left: 15px;
+  }
+
+  .page-main-1__button--order,
+  .page-main-1__button--video {
+    width: 250px;
+    font-size: 30px;
   }
 
   .page-main-1__button--order {
-    margin-bottom: 25px;
+    position: relative;
+    margin-bottom: -70px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 265px;
+      height: 79px;
+      width: 78px;
+      background: url('../img/bg/bg-arrows.svg') no-repeat center;
+    }
   }
 
   .page-main-1__button--video {
-    position: relative;
+    border: 1px solid $text-alt-2;
     background-position: 230px 21px;
   }
 }
