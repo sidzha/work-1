@@ -82,7 +82,7 @@
     padding: 0;
     padding-left: 90px;
     box-shadow: none;
-    margin-right: 108px;
+    margin-right: 50px;
   }
 
   .price {
@@ -92,14 +92,14 @@
   .page-main-2__button {
     display: inline-block;
     width: 218px;
-    height: 48px;
+    text-align: center;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 48px;
     color: $bg-color-2;
     background-color: $text-white;
     border: none;
     border-radius: 10px;
-    vertical-align: 20px;
+    vertical-align: 35px;
     cursor: pointer;
     transition-property: box-shadow, transform, color;
     transition-duration: 0.15s;

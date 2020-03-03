@@ -125,12 +125,13 @@
     line-height: 20px;
     letter-spacing: 0.1em;
     padding-left: 180px;
-    margin-right: 208px;
+    margin-right: 150px;
   }
 
   .page-main-2__button {
     width: 270px;
-    height: 60px;
+    line-height: 60px;
     text-transform: uppercase;
+    vertical-align: 60px;
   }
 }

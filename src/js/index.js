@@ -40,8 +40,8 @@ function closeAll() {
 
 //
 const videoBtn = document.querySelector('.js-btn');
-
 const x = window.matchMedia('(min-width: 768px)');
+const maintMain = document.querySelector('.js-404');
 
 function myFunction(x) {
   if (videoBtn) {
@@ -56,3 +56,9 @@ function myFunction(x) {
 
 myFunction(x);
 x.addListener(myFunction);
+
+if (maintMain) {
+  maintMain.addEventListener('click', function() {
+    window.location = './index.html';
+  });
+}

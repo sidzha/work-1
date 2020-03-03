@@ -6,12 +6,12 @@
 }
 
 .page-header__logo {
-  font-family: "SF Compact Display", Arial, Helvetica, sans-serif;
+  font-family: 'SF Compact Display', Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 18.5px;
   color: $text-dark;
   line-height: 46px;
-  background: url("../img/logo.svg") no-repeat left;
+  background: url('../img/logo.svg') no-repeat left;
   padding-left: 50px;
 
   & span {
@@ -19,8 +19,4 @@
       font-weight: 900;
     }
   }
-}
-
-.page-header__header {
-  display: none;
 }

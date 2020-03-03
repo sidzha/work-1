@@ -16,6 +16,27 @@ main {
     z-index: 5;
   }
 }
+//maint
+.page-main-maint {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: url('../img/bg/bg-maintenance.svg') no-repeat center;
+  background-size: contain;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  z-index: 6;
+
+  & p {
+    width: 120px;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 120px;
+    margin-right: 180px;
+  }
+}
 
 .page-main-1 {
   max-width: 375px;
@@ -41,7 +62,7 @@ main {
   right: 0;
   opacity: 0;
   animation-name: fade;
-  animation-duration: 9s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 
@@ -49,10 +70,10 @@ main {
     animation-delay: 0s;
   }
   &:nth-child(2) {
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
   &:nth-child(3) {
-    animation-delay: 6s;
+    animation-delay: 4s;
   }
 }
 
@@ -101,18 +122,18 @@ main {
   bottom: 85px;
   background-size: 300% 100%;
   background-image: linear-gradient(
-    to right,
-    #667eea,
-    #764ba2,
-    #6b8dd6,
-    #8e37d7
+    90deg,
+    #8e73ea 0%,
+    #7a7af1 58.85%,
+    #6983f5 100%
   );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.08);
   color: $text-white;
-  transition: background-position 0.6s ease-in-out;
-
+  transition-property: box-shadow, transform;
+  transition-duration: 0.15s;
   &:hover {
-    background-position: 100% 0;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.24), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
   }
 }
 
@@ -130,6 +151,15 @@ main {
   align-self: center;
   height: 700px;
   padding: 660px 30px 0;
+}
+
+.page-main-1__appstore,
+.page-main-1__playmarket {
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .page-main-1__appstore {
